@@ -19,12 +19,14 @@ body {
 
 h1, h2, h3 {
     color: #004080;
+    font-weight: bold;
 }
 
 /* Hero Section */
 .course-hero {
     display: flex;
     padding: 30px 0;
+    position: relative;
 }
 
 .course-hero-image {
@@ -62,6 +64,7 @@ h1, h2, h3 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    z-index: 10;
 }
 
 .cta-btn {
@@ -79,6 +82,17 @@ h1, h2, h3 {
     background-color: #002f60;
 }
 
+.see-times-btn {
+    background-color: #6200ea;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
 /* Tab Navigation */
 .tab-nav {
     position: sticky;
@@ -86,6 +100,7 @@ h1, h2, h3 {
     background-color: white;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    z-index: 100;
 }
 
 .tab-nav ul {
@@ -99,6 +114,7 @@ h1, h2, h3 {
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .tab-nav ul li a:hover {

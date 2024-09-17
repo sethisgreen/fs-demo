@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Detail - Scratch Coding for Beginners</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -12,15 +12,15 @@
     <div class="main-container">
 
         <!-- Hero Section -->
-        <section class="course-hero">
+        <section class="course-hero" aria-labelledby="course-hero-heading">
             <div class="course-hero-image">
                 <img src="course1.jpg" alt="Scratch Coding Course Image">
             </div>
             <div class="course-hero-info">
-                <h1>Scratch Coding for Beginners</h1>
+                <h1 id="course-hero-heading">Scratch Coding for Beginners</h1>
                 <p>Learn the basics of coding with Scratch, designed for young learners.</p>
                 <div class="course-summary">
-                    <span>⭐ 5.0 (15 reviews)</span>
+                    <span aria-label="Rating 5 stars">⭐ 5.0 (15 reviews)</span>
                     <span>•</span>
                     <span>7-10 years</span>
                     <span>•</span>
@@ -30,25 +30,25 @@
                 </div>
             </div>
             <!-- Floating CTA -->
-            <aside class="cta-panel">
+            <aside class="cta-panel" role="complementary">
                 <div class="cta-details">
                     <h2>Live Group Course</h2>
                     <p><strong>Duration:</strong> 45 mins</p>
                     <p><strong>Class Size:</strong> 2-6 learners</p>
                     <p><strong>Ages:</strong> 7-10</p>
-                    <button class="cta-btn">Enroll Now</button>
+                    <button class="cta-btn" aria-label="Enroll Now for Scratch Coding for Beginners">Enroll Now</button>
                     <p>Live video meetings with a hands-on approach to learning.</p>
                     <ul>
                         <li>✔ Completed by 15 students</li>
                         <li>✔ Live coding practice</li>
                     </ul>
-                    <button class="see-times-btn">See All Available Times</button>
+                    <button class="see-times-btn" aria-label="See all available times">See All Available Times</button>
                 </div>
             </aside>
         </section>
 
-        <!-- Tab Navigation (will stick on scroll) -->
-        <nav class="tab-nav">
+        <!-- Tab Navigation -->
+        <nav class="tab-nav" aria-label="Course Navigation" role="navigation">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#overview">Learning Overview</a></li>
@@ -59,21 +59,21 @@
         </nav>
 
         <!-- Course Content Sections -->
-        <section id="about" class="course-section">
+        <article id="about" class="course-section">
             <h2>About This Course</h2>
             <p>This Scratch Coding for Beginners course is designed for young learners to dive into the world of coding through the Scratch platform. Students will learn basic coding principles through engaging, hands-on projects, enabling them to create their own animations and games.</p>
-        </section>
+        </article>
 
-        <section id="overview" class="course-section">
+        <article id="overview" class="course-section">
             <h2>Learning Overview</h2>
             <ul>
                 <li>Understand basic coding concepts.</li>
                 <li>Create animations and simple games using Scratch.</li>
                 <li>Problem-solving skills through logic-based projects.</li>
             </ul>
-        </section>
+        </article>
 
-        <section id="schedule" class="course-section">
+        <article id="schedule" class="course-section">
             <h2>Class Schedule</h2>
             <table>
                 <thead>
@@ -96,9 +96,9 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </article>
 
-        <section id="teacher" class="course-section">
+        <article id="teacher" class="course-section">
             <h2>Instructor</h2>
             <div class="instructor-profile">
                 <img src="instructor1.jpg" alt="Ms. Sara Instructor Image">
@@ -107,18 +107,30 @@
                     <p>Ms. Sara is a passionate STEM educator with over 5 years of experience teaching coding to young children. She believes in hands-on, fun learning, and her approach ensures every student feels successful.</p>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section id="reviews" class="course-section">
+        <article id="reviews" class="course-section">
             <h2>Reviews</h2>
             <div class="review">
                 <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
                 <p>"My child loved learning how to code! The instructor was patient and made coding fun."</p>
                 <p><strong>- Evelyn</strong></p>
             </div>
-        </section>
+        </article>
         
     </div>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('.tab-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
