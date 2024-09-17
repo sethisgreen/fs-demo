@@ -211,9 +211,83 @@ nav {
     background-color: #ddd;
 }
 
+/* Course Sections Styling */
 .course-section {
-    padding: 30px 0;
-    border-bottom: 1px solid #ddd;  /* Added bottom border for separation */
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+    border-left: 5px solid #6200ea;  /* Accent border */
+}
+
+.course-section h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;  /* Underline for title */
+    padding-bottom: 10px;
+}
+
+/* Icon and text alignment in sections */
+.course-section .section-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* Space between icon and text */
+    margin-bottom: 20px;
+}
+
+.course-section .section-item img, .course-section .section-item i {
+    width: 40px;
+    height: 40px;
+}
+
+/* Learning Goals Styling */
+.learning-goals {
+    background-color: #fef7e0;  /* Soft background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-left: 5px solid #ff9800;
+}
+
+.learning-goals h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.learning-goals ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.learning-goals ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.show-more-btn, .see-all-goals-btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.show-more-btn:hover, .see-all-goals-btn:hover {
+    background-color: #002f60;
+}
+
+/* Icons for specific items */
+.icon-projects, .icon-live-meetings, .icon-grading {
+    width: 40px;
+    height: 40px;
 }
 
 .course-grid {
