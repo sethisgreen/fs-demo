@@ -11,29 +11,20 @@ body {
     color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: #004080;
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1, h2, h3 {
     color: #004080;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
 /* Hero Section */
 .course-hero {
     display: flex;
-    background-color: #f0f4ff;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .course-hero-image {
@@ -62,7 +53,18 @@ h2 {
     color: #666;
 }
 
-.enroll-btn {
+/* CTA Panel (Sticky) */
+.cta-panel {
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.cta-btn {
     background-color: #004080;
     color: white;
     padding: 15px 30px;
@@ -73,29 +75,66 @@ h2 {
     margin-top: 20px;
 }
 
-.enroll-btn:hover {
+.cta-btn:hover {
     background-color: #002f60;
 }
 
-/* Course Overview */
-.course-overview {
-    padding: 30px;
+/* Tab Navigation */
+.tab-nav {
+    position: sticky;
+    top: 0;
     background-color: white;
-    border-radius: 10px;
-    margin: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.course-overview p {
-    font-size: 1.1em;
-    color: #555;
+.tab-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Instructor Section */
-.instructor-section {
-    padding: 30px;
+.tab-nav ul li a {
+    color: #004080;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.tab-nav ul li a:hover {
+    color: #002f60;
+}
+
+/* Course Sections */
+.course-section {
     background-color: white;
+    padding: 30px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-section h2 {
+    margin-bottom: 20px;
+}
+
+.course-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-section ul li {
+    margin-bottom: 10px;
+}
+
+.course-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-section table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 .instructor-profile {
@@ -110,53 +149,14 @@ h2 {
     height: 100px;
 }
 
-.instructor-profile h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.instructor-profile p {
-    color: #555;
-}
-
-/* Course Details Section */
-.course-details {
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.course-details ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.course-details ul li {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table th, table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-table th {
+/* Review Section */
+.review {
     background-color: #f0f4ff;
-    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-/* Call to Action Section */
-.call-to-action {
-    text-align: center;
-    margin: 40px;
+.review p {
+    margin-bottom: 10px;
 }
-
