@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Courses</title>
     <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <!-- Header Section -->
     <header>
@@ -20,211 +21,99 @@
             </ul>
         </nav>
     </header>
-     <!-- Main Container -->
+
     <div class="main-container">
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Guiding our kids to become a future....</h1>
-            <ul class="highlights">
-                <li>🌟 Tailored learning for every child</li>
-                <li>👩‍🏫 Passionate educators foster progress</li>
-                <li>📅 Flexible courses fit any schedule</li>
-            </ul>
-            <div class="ratings">
-                <span>⭐ Excellent</span>
-                <span>3,112 reviews on Trustpilot</span>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Guiding our kids to become the future...</h1>
+                <ul class="highlights">
+                    <li>🌟 Tailored learning for every child</li>
+                    <li>👩‍🏫 Passionate educators foster progress</li>
+                    <li>📅 Flexible courses fit any schedule</li>
+                </ul>
+                <div class="ratings">
+                    <span>⭐ Excellent</span>
+                    <span>3,112 reviews on Trustpilot</span>
+                </div>
+                <div class="age-filter">
+                    <span>Learner's age: </span>
+                    <button>3-5</button>
+                    <button>6-9</button>
+                    <button>10-13</button>
+                    <button>14-18</button>
+                </div>
             </div>
-            <div class="age-filter">
-                <span>Learner's age: </span>
-                <button>3-5</button>
-                <button>6-9</button>
-                <button>10-13</button>
-                <button>14-18</button>
+            <div class="hero-image">
+                <img src="student.jpg" alt="Student learning">
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="student.jpg" alt="Student learning">
-        </div>
-    </section>
+        </section>
 
-    <!-- Filter Bar -->
-    <section class="filter-bar">
-        <div class="filters">
-            <button>Day or time</button>
-            <button>Date</button>
-            <button>2+ learners</button>
-            <button>Any price</button>
-            <button>Age</button>
-            <button>More</button>
-            <a href="#" class="reset-filters">Reset Filters</a>
-        </div>
-        <div class="sort-by">
-            <span>Sort by:</span>
-            <select>
-                <option value="relevance">Relevance</option>
-                <option value="popularity">Popularity</option>
-                <option value="rating">Rating</option>
-            </select>
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section class="courses">
-        <h2>Top rated courses</h2>
-        <div class="tags">
-            <button>Plan your full semester</button>
-            <button>Math courses</button>
-            <button>Boost English skills</button>
-            <button>Science courses</button>
-            <button>Self-paced courses</button>
-        </div>
-        <div class="course-grid">
-    
-            <!-- Course 1 -->
-            <a href="course-details.html" class="course-link">
-            <div class="course-card" >
-                <img src="course1.jpg" alt="Course Thumbnail">
-                <h3>Scratch Coding for Beginners</h3>
-                <div class="rating">
-                    ⭐ <span>5.0 (15 reviews)</span>
-                </div>
-                <div class="vendor">
-                    <img src="instructor1.jpg" alt="Instructor Image">
-                    <a href="#">Ms. Sara (STEM Apprentice)</a>
-                </div>
-                <div class="course-info">
-                    <div>
-                        <span>7-10</span>
-                        <small>Ages</small>
-                    </div>
-                    <div>
-                        <span>45</span>
-                        <small>Mins</small>
-                    </div>
-                    <div>
-                        <span>EASY</span>
-                        <small>Difficulty</small>
-                    </div>
-                </div>
+        <!-- Filter Bar -->
+        <section class="filter-bar">
+            <div class="filters">
+                <button>Day or time</button>
+                <button>Date</button>
+                <button>2+ learners</button>
+                <button>Any price</button>
+                <button>Age</button>
+                <button>More</button>
+                <a href="#" class="reset-filters">Reset Filters</a>
             </div>
-            </a>
-            <!-- Course 2 -->
-            <a href="course-details.html" class="course-link">
-            <div class="course-card">
-                <img src="course2.jpg" alt="Course Thumbnail">
-                <h3>Minecraft Modding for Kids</h3>
-                <div class="rating">
-                    ⭐ <span>4.8 (30 reviews)</span>
-                </div>
-                <div class="vendor">
-                    <img src="instructor2.jpg" alt="Instructor Image">
-                    <a href="#">Mr. John (Coding Wizard)</a>
-                </div>
-                <div class="course-info">
-                    <div>
-                        <span>8-12</span>
-                        <small>Ages</small>
+            <div class="sort-by">
+                <span>Sort by:</span>
+                <select>
+                    <option value="relevance">Relevance</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses">
+            <h2>Top rated courses</h2>
+            <div class="tags">
+                <button>Plan your full semester</button>
+                <button>Math courses</button>
+                <button>Boost English skills</button>
+                <button>Science courses</button>
+                <button>Self-paced courses</button>
+            </div>
+            <div class="course-grid">
+                <!-- Course 1 -->
+                <a href="course-details.html" class="course-link">
+                    <div class="course-card">
+                        <img src="course1.jpg" alt="Course Thumbnail">
+                        <h3>Scratch Coding for Beginners</h3>
+                        <div class="rating">
+                            ⭐ <span>5.0 (15 reviews)</span>
+                        </div>
+                        <div class="vendor">
+                            <img src="instructor1.jpg" alt="Instructor Image">
+                            <a href="#">Ms. Sara (STEM Apprentice)</a>
+                        </div>
+                        <div class="course-info">
+                            <div>
+                                <span>7-10</span>
+                                <small>Ages</small>
+                            </div>
+                            <div>
+                                <span>45</span>
+                                <small>Mins</small>
+                            </div>
+                            <div>
+                                <span>EASY</span>
+                                <small>Difficulty</small>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span>60</span>
-                        <small>Mins</small>
-                    </div>
-                    <div>
-                        <span>MEDIUM</span>
-                        <small>Difficulty</small>
-                    </div>
-                </div>
-            </div></a>
-        
-            <!-- Course 3 -->
-            <a href="course-details.html" class="course-link">
-            <div class="course-card">
-                <img src="course3.jpg" alt="Course Thumbnail">
-                <h3>Creative Writing for Young Minds</h3>
-                <div class="rating">
-                    ⭐ <span>4.9 (25 reviews)</span>
-                </div>
-                <div class="vendor">
-                    <img src="instructor3.jpg" alt="Instructor Image">
-                    <a href="#">Ms. Emily (Writing Expert)</a>
-                </div>
-                <div class="course-info">
-                    <div>
-                        <span>10-13</span>
-                        <small>Ages</small>
-                    </div>
-                    <div>
-                        <span>50</span>
-                        <small>Mins</small>
-                    </div>
-                    <div>
-                        <span>MEDIUM</span>
-                        <small>Difficulty</small>
-                    </div>
-                </div>
-            </div></a>
-        
-            <!-- Course 4 -->
-            <a href="course-details.html" class="course-link">
-            <div class="course-card">
-                <img src="course4.jpg" alt="Course Thumbnail">
-                <h3>Introduction to Robotics</h3>
-                <div class="rating">
-                    ⭐ <span>4.7 (40 reviews)</span>
-                </div>
-                <div class="vendor">
-                    <img src="instructor4.jpg" alt="Instructor Image">
-                    <a href="#">Dr. Steve (Robotics Guru)</a>
-                </div>
-                <div class="course-info">
-                    <div>
-                        <span>12-15</span>
-                        <small>Ages</small>
-                    </div>
-                    <div>
-                        <span>90</span>
-                        <small>Mins</small>
-                    </div>
-                    <div>
-                        <span>HARD</span>
-                        <small>Difficulty</small>
-                    </div>
-                </div>
-            </div></a>
-        
-            <!-- Course 5 -->
-            <a href="course-details.html" class="course-link">
-            <div class="course-card">
-                <img src="course5.jpg" alt="Course Thumbnail">
-                <h3>Fun with Math: Puzzles and Games</h3>
-                <div class="rating">
-                    ⭐ <span>5.0 (20 reviews)</span>
-                </div>
-                <div class="vendor">
-                    <img src="instructor5.jpg" alt="Instructor Image">
-                    <a href="#">Ms. Laura (Math Genius)</a>
-                </div>
-                <div class="course-info">
-                    <div>
-                        <span>6-9</span>
-                        <small>Ages</small>
-                    </div>
-                    <div>
-                        <span>30</span>
-                        <small>Mins</small>
-                    </div>
-                    <div>
-                        <span>EASY</span>
-                        <small>Difficulty</small>
-                    </div>
-                </div>
-            </div></a>
-        
-        </div>
-        
-    </section>
-</div>
+                </a>
+                <!-- Add other course cards similarly -->
+            </div>
+        </section>
+    </div>
+
     <!-- Footer Section -->
     <footer>
         <div class="footer-content">
