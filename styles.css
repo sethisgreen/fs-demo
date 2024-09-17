@@ -374,3 +374,74 @@ footer {
         align-self: flex-start;
     }
 }
+
+/* CTA Panel (Course Details) */
+.cta-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-top: -20px;
+    float: right;
+    text-align: left;
+}
+
+.cta-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cta-panel p, .cta-panel ul {
+    font-size: 0.95em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cta-panel .cta-btn, .cta-panel .see-times-btn {
+    display: block;
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-panel .cta-btn:hover, .cta-panel .see-times-btn:hover {
+    background-color: #002f60;
+}
+
+/* Instructor Section */
+.instructor-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.instructor-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Reviews */
+.review {
+    background-color: #f0f4ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.review p {
+    margin-bottom: 5px;
+}
+
+.review strong {
+    font-weight: bold;
+}
