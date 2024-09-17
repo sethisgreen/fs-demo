@@ -30,6 +30,7 @@ header nav {
     align-items: center;
     background-color: #004080;
     padding: 10px 20px;
+    max-width: 1200px;
 }
 
 header nav .logo {
