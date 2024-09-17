@@ -18,15 +18,17 @@ body {
     padding: 20px;
 }
 
-/* Header Section */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Extend header and footer backgrounds */
+header, footer {
+    width: 100%;
     background-color: #004080;
-    padding: 10px 20px;
+}
+
+header nav, footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 10px 20px;
+    color: white;
 }
 
 header nav .logo {
@@ -157,10 +159,50 @@ header .btn {
     background-color: #d9e2f3;
 }
 
+.filters a.reset-filters {
+    color: #6200ea;
+    text-decoration: none;
+}
+
 .sort-by select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+}
+
+/* Top Rated Courses Section */
+.courses {
+    margin-top: 40px;
+}
+
+.courses h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.tags button {
+    background-color: #e0e7ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.tags button:hover {
+    background-color: #c7d2fe;
 }
 
 /* Course Grid */
@@ -264,98 +306,13 @@ header .btn {
     font-size: 0.85em;
 }
 
-/* Course Details View - Tabs and Sections */
-.tab-nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    z-index: 100;
-}
-
-.tab-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.tab-nav ul li a {
-    color: #004080;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.tab-nav ul li a:hover {
-    color: #002f60;
-}
-
-.course-section {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.course-section h2 {
-    margin-bottom: 20px;
-}
-
-.course-section ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.course-section ul li {
-    margin-bottom: 10px;
-}
-
-.course-section table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.course-section table th, table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Instructor Section */
-.instructor-profile {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.instructor-profile img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-/* Review Section */
-.review {
-    background-color: #f0f4ff;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.review p {
-    margin-bottom: 10px;
-}
-
 /* Footer Section */
 footer {
-    background-color: #004080;
-    color: white;
+    width: 100%;
     padding: 20px 0;
+    background-color: #004080;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    color: white;
 }
 
 footer ul {
