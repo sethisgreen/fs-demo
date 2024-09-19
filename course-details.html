@@ -1,104 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Details - Scratch Coding for Beginners</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <div class="logo">Flexi-Edu</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn primary-btn">Sign Up</a></li>
-                <li><a href="#" class="btn secondary-btn">Log In</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">Flexi-Edu</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Courses</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <button class="btn primary-btn">Sign Up</button>
+          <button class="btn secondary-btn">Login</button>
+        </ul>
+      </nav>
     </header>
-    
+
     <!-- Main Container -->
-    <div class="container">
+    <div class="container cd-content">
+      <div class="course-details">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Scratch Coding for Beginners</h1>
-                <p>Learn the basics of coding with Scratch, designed for young learners.</p>
-                <div class="ratings">
-                    ⭐ 5.0 (15 reviews) • Ages: 7-10 • 45 mins per class • EASY
-                </div>
+        <section class="hero-sub">
+          <div class="hero-content">
+            <h1>Scratch Coding for Beginners</h1>
+            <p>
+              Learn the basics of coding with Scratch, designed for young
+              learners.
+            </p>
+            <div class="vendor">
+              <img src="instructor1.jpg" alt="Instructor Image" />
+              <div class="vendor-info">
+                <a href="#">Ms. Sara (STEM Apprentice)</a>
+                <div class="ratings">⭐ 5.0 (15 reviews)</div>
+              </div>
             </div>
-            <div class="hero-image">
-                <img src="course1.jpg" alt="Course Thumbnail">
-            </div>
+          </div>
+          <div class="hero-image">
+            <img src="course1.jpg" alt="Course Thumbnail" />
+          </div>
         </section>
 
-        <!-- CTA Panel -->
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#learning-overview">Learning Overview</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#teacher">Teacher</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <!-- What's Included Section -->
+        <section id="whats-included" class="course-section">
+          <h2>What's Included</h2>
+          <div class="section-item">
+            <img
+              src="live-meetings-icon.png"
+              alt="Live Meetings"
+              class="icon-live-meetings"
+            />
+            <p>4 live meetings - 4 in-class hours</p>
+          </div>
+          <div class="section-item">
+            <img src="projects-icon.png" alt="Projects" class="icon-projects" />
+            <p>Projects - Feedback sent upon request</p>
+          </div>
+          <div class="section-item">
+            <img src="grading-icon.png" alt="Grading" class="icon-grading" />
+            <p>Grading - Available upon request only</p>
+          </div>
+          <a href="#" class="show-more-btn">Show All 3 Details</a>
+        </section>
+
+        <!-- Learning Goals Section -->
+        <section id="learning-goals" class="learning-goals course-section">
+          <h2>Learning Goals</h2>
+          <ul>
+            <li>
+              <i class="icon-goal"></i>Apply coding concepts like sequences,
+              events, loops, and debugging.
+            </li>
+            <li>
+              <i class="icon-goal"></i>Create effective coding solutions to
+              complete tasks and solve problems.
+            </li>
+          </ul>
+          <a href="#" class="see-all-goals-btn">Show All Learning Goals</a>
+        </section>
+
+        <!-- Class Experience Section -->
+        <section id="class-experience" class="course-section">
+          <h2>Class Experience</h2>
+          <p><strong>US Grade 3 - 5</strong></p>
+          <p>
+            This Scratch Coding for Beginners course is designed for young
+            learners to dive into the world of coding through the Scratch
+            platform. Students will learn basic coding principles through
+            engaging, hands-on projects, enabling them to create their own
+            animations and games.
+          </p>
+          <a href="#" class="show-more-btn">Show More</a>
+        </section>
+
+        <!-- Instructor Section -->
+        <section id="teacher" class="instructor-profile course-section">
+          <img src="instructor1.jpg" alt="Ms. Sara" />
+          <div>
+            <h3>Ms. Sara (STEM Apprentice)</h3>
+            <p>
+              Ms. Sara is a passionate STEM educator with over 5 years of
+              experience teaching coding to young children. She believes in
+              hands-on, fun learning, and her approach ensures every student
+              feels successful.
+            </p>
+          </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="course-section">
+          <h2>Reviews</h2>
+          <div class="review">
+            <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+            <p>
+              "My child loved learning how to code! The instructor was patient
+              and made coding fun."
+            </p>
+            <p><strong>- Evelyn</strong></p>
+          </div>
+        </section>
+      </div>
+      <!-- CTA Panel -->
+      <div class="ctp-container">
         <aside class="cta-panel">
-            <h2>Live Group Course</h2>
-            <p><strong>Duration:</strong> 45 mins</p>
-            <p><strong>Class Size:</strong> 2-6 learners</p>
+          <div class="cta-header">
+            <h6 class="ctp-header-title">Go At Your Own Pace</h6>
+          </div>
+          <div class="cta-section">
             <p><strong>Ages:</strong> 7-10</p>
-            <a href="#" class="cta-btn">Enroll Now</a>
-            <p>Live video meetings with hands-on learning approach.</p>
+            <p><strong>Duration:</strong> 45 mins</p>
+            <p><strong>Difficulty:</strong> MEDIUM</p>
+          </div>
+          <hr class="hr-divider" />
+          <div class="cta-section">
+            <p>Live video meetings with hands-on code checks.</p>
             <ul>
-                <li>✔ Completed by 15 students</li>
-                <li>✔ Live coding practice</li>
+              <li>✔ Completed by 15 students</li>
+              <li>✔ Live coding practice</li>
             </ul>
-            <a href="#" class="see-times-btn">See All Available Times</a>
+          </div>
+          <hr class="hr-divider" />
+          <div class="cta-section">
+            <a href="#" class="btn primary-btn cta-btn">Enroll Now</a>
+          </div>
         </aside>
-
-        <!-- Course Content Sections -->
-        <section class="course-section">
-            <h2>What's Included</h2>
-            <div class="section-item">
-                <img src="live-meetings-icon.png" alt="Live Meetings" class="icon-live-meetings">
-                <p>4 live meetings - 4 in-class hours</p>
-            </div>
-            <div class="section-item">
-                <img src="projects-icon.png" alt="Projects" class="icon-projects">
-                <p>Projects - Feedback sent upon request</p>
-            </div>
-            <div class="section-item">
-                <img src="grading-icon.png" alt="Grading" class="icon-grading">
-                <p>Grading - Available upon request only</p>
-            </div>
-            <a href="#" class="show-more-btn">Show All 3 Details</a>
-        </section>
-        
-        <section class="learning-goals">
-            <h2>Learning Goals</h2>
-            <ul>
-                <li><i class="icon-goal"></i>Apply coding concepts like sequences, events, loops, and debugging.</li>
-                <li><i class="icon-goal"></i>Create effective coding solutions to complete tasks and solve problems.</li>
-            </ul>
-            <a href="#" class="see-all-goals-btn">Show All Learning Goals</a>
-        </section>
-        
-        <section class="instructor-profile">
-            <img src="instructor1.jpg" alt="Ms. Sara">
-            <div>
-                <h3>Ms. Sara (STEM Apprentice)</h3>
-                <p>Ms. Sara is a passionate STEM educator with over 5 years of experience teaching coding to young children. She believes in hands-on, fun learning, and her approach ensures every student feels successful.</p>
-            </div>
-        </section>
+      </div>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 CoursePlatform. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
+      <div class="footer-content">
+        <p>&copy; 2024 CoursePlatform. All rights reserved.</p>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
