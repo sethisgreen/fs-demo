@@ -398,6 +398,157 @@ nav {
   color: #666;
 }
 
+/* Tab Navigation */
+.tab-nav {
+  overflow: hidden;
+  min-height: 48px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  height: 60px;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  width: 100%;
+}
+
+.tab-nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.tab-nav ul li {
+  margin-bottom: -2px;
+}
+
+.tab-nav ul li a {
+  font-size: 1em;
+  padding: 10px;
+  color: #666;
+  text-decoration: none;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-nav ul li a:hover,
+.tab-nav ul li a.active {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+}
+
+/* Course Sections */
+.course-section {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.course-section h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.course-section .section-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.course-section .section-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.learning-goals {
+  background-color: #fef7e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-left: 5px solid #ff9800;
+}
+
+.learning-goals ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.learning-goals ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.learning-goals ul li i {
+  font-size: 1.2em;
+  color: #ff9800;
+}
+
+.show-more-btn,
+.see-all-goals-btn {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.show-more-btn:hover,
+.see-all-goals-btn:hover {
+  background-color: #002f60;
+}
+
+/* Instructor Section */
+.instructor-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.instructor-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Reviews Section */
+.review {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+  margin-bottom: 10px;
+}
+
+.review strong {
+  font-weight: bold;
+}
+
+.review p:first-child {
+  font-size: 1.2em;
+  color: #ff9800; /* Make the stars stand out more */
+}
+
 /* CTA Panel */
 .cta-panel {
   background-color: white;
