@@ -106,13 +106,16 @@ nav {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 7em;
 }
 
 .ctp-container {
   position: -webkit-sticky;
   position: sticky;
   top: 40px;
+}
+
+.course-section-wrap {
+  gap: 9.6em;
 }
 
 /* Hero Section */
