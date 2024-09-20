@@ -116,6 +116,7 @@ nav {
 
 .course-section-wrap {
   gap: 9.6em;
+  display: grid;
 }
 
 /* Hero Section */
