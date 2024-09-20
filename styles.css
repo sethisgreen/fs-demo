@@ -106,7 +106,6 @@ nav {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 9.6em;
 }
 
 .ctp-container {
@@ -445,6 +444,7 @@ nav {
 .course-section {
   background-color: white;
   border-radius: 10px;
+  gap: 9.2em;
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); */
 }
 
